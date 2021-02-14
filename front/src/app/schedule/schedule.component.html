@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div id="content">
+  <div class="container">
+    <full-calendar #fullcalendar [options]="calendarOptions"></full-calendar>
+  </div>
+</div>
+
+<button (click)="showModalDialog()" [style.visibility] = "part == 'БРИГАДИР' ? 'visible' : 'hidden'" class="button-equipment">
+  Выдать оборудование
+</button>
+<p-dialog header="Выдача оборудования" [(visible)]="displayModal" [modal]="true" [style]="{ width: '60vw', position: 'absolute' }"
+          [baseZIndex]="10000" [draggable]="false" [resizable]="false">
+  <p-table [columns]="cols" [value]="minerDeliveryResponses" >
+    <ng-template pTemplate="header" let-columns >
+      <tr>
+        <th style="background: none" *ngFor="let col of columns">
+          {{col.header}}
+        </th>
+        <th style="width: 50px; background: white !important; border-bottom: none;">
+
+        </th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr>
+        <td *ngFor="let col of columns">
+          {{rowData[col.field]}}
+        </td>
+        <td  style="border-bottom: none !important;">
+          <button style="color: #D4A439 !important;" (click)="doDelivery(rowData['minerId'])" pButton type="button"
+                  icon="pi pi-user-plus" class="p-button-rounded p-button-text p-button-lg"></button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</p-dialog>
+
+<p-toast position="top-right" [baseZIndex]="20000">
+</p-toast>

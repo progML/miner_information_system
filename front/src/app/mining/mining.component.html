@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div id="content">
+  <div class="container">
+
+    <div class="container-title">
+      Добыча {{ brigadeId }} бригады
+    </div>
+
+    <div class="container-table">
+      <p-table [value]="miningModel">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Руда</th>
+            <th>Вес добычи</th>
+            <th>Дата добычи</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-mining>
+          <tr>
+            <td>{{mining.oreName}}</td>
+            <td>{{mining.weight}}</td>
+            <td>{{mining.dateWork | date : 'dd-MM-yyyy'}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+
+  </div>
+</div>

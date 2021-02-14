@@ -1,0 +1,55 @@
+<app-header></app-header>
+<div id="content">
+  <form (ngSubmit)="onSubmit()">
+  <div class="container-txt" [style.visibility]="part != 'БРИГАДИР' ? 'hidden' : 'visible'" >
+    <span>История оценок шахтера по id:</span>
+    <input [(ngModel)] = "inputValue" name="minerId">
+    <button type="submit">Просмотреть</button>
+  </div>
+  <div class="container-tab-mark">
+    <table>
+      <tr>
+        <th>Название шахты</th>
+        <th>Номер бригады</th>
+        <th>Роль</th>
+        <th>Дата работы</th>
+        <th>Оценка</th>
+      </tr>
+      <tr *ngFor="let elm of magazine">
+        <td>{{elm.mineName}}</td>
+        <td>{{elm.brigadeId}}</td>
+        <td>{{elm.part}}</td>
+        <td>{{elm.dateWork | date:'yyyy-MM-dd'}}</td>
+        <td>{{elm.rating}}</td>
+    </table>
+  </div>
+  </form>
+  <div class = "container-txt" [style.visibility]="part != 'БРИГАДИР' ? 'hidden' : 'visible'">
+    <span>Выставление оценок {{ brigadeId }} бригаде, в шахте Железорудная, за  {{currentDate | date:'yyyy-MM-dd'}}</span>
+  </div>
+  <div class="container-tab-mark" [style.visibility]="part != 'БРИГАДИР' ? 'hidden' : 'visible'">
+    <table>
+      <tr>
+        <th>Номер нахтера</th>
+        <th>Имя</th>
+        <th>Роль</th>
+        <th>Оценка</th>
+      </tr>
+      <tr *ngFor="let mg of managing">
+        <td>{{mg.minerId}}</td>
+        <td>{{mg.name}}</td>
+        <td>{{mg.part}}</td>
+        <td>
+          <select [formControl]="ratingValue" >
+            <option *ngFor="let r of ratings" [value]="r.id">
+              {{r.rating}}
+            </option>
+        </select>
+        </td>
+        <td><button (click)="addSubmit(mg.minerId, mg.part, currentDate)" type ="reset" onclick="window.location.reload();">Отправить</button></td>
+      </tr>
+    </table>
+  </div>
+
+
+</div>

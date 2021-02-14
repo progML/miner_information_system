@@ -1,0 +1,12 @@
+<div id="header">
+  <p-menubar [model]="items">
+    <ng-template pTemplate="start">
+      <img src="../../assets/images/logo.png" height="55" width="85" alt="">
+    </ng-template>
+    <button mat-button [matMenuTriggerFor]="menu">[{{ minerId }}] {{ username }}</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/profile">Личный кабинет</button>
+      <button mat-menu-item (click)="logout()" routerLink="../auth">Выход</button>
+    </mat-menu>
+  </p-menubar>
+</div>

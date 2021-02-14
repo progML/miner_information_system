@@ -1,0 +1,80 @@
+#content {
+  background: white;
+  background-size: 100%;
+}
+
+.deletebtn {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.deletebtn:hover {
+  color: #D4A439;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 18px;
+  width: 70px;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 28px;
+}
+span {
+  color: black;
+  font-size: 28px;
+  font-family: 'Comfortaa', sans-serif !important;
+}
+
+//button{
+//  border-radius: 18px;
+//  height: 50px;
+//  width: auto;
+//  background-color: white;
+//  border: 1px solid black;
+//  font-size: 21px;
+//  margin-left: 530px;
+//}
+
+button{
+  background-color: white;
+  border: 0;
+  padding: 0;
+}
+
+
+
+button:hover{
+  color: #D4A439;
+}
+
+.container-txt{
+  width: 100%;
+  height: 130px;
+  padding-top: 60px;
+  text-align: left;
+}
+
+.container-tab-mark {
+  width: auto;
+  height: auto;
+
+  TABLE{
+    margin: auto;
+    width: 80%; /* Ширина таблицы */
+    border-spacing: 7px 11px; /* Расстояние между ячейками */
+  }
+  TD, TH {
+    padding: 10px; /* Поля вокруг содержимого ячейки */
+    font-size: 28px;
+    text-align: center;
+  }
+  TH {
+    border-bottom: 2px solid #666666; /* Линия внизу ячейки */
+    color: #666666;
+    font-family: 'Comfortaa';
+  }
+
+
+
+}

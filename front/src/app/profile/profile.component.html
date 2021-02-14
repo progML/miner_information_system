@@ -1,0 +1,50 @@
+<app-header></app-header>
+<div id="content">
+  <div class="container">
+
+<!--    Контейнер для таб-меню-->
+    <div class="container-tab-menu">
+      <p-tabMenu [model]="items" [activeItem]="activeItem">
+        <ng-template pTemplate="item" let-item let-i="index">
+          <span class="{{ item.icon }}"></span>
+          <span class="p-menuitem-text">{{ item.label }}</span>
+          <span *ngIf="item.label == 'Сообщения' && profileMessages.length != 0"
+                class="p-badge p-badge-danger">{{ profileMessages.length }}</span>
+        </ng-template>
+
+      </p-tabMenu>
+    </div>
+
+<!--    Контейнер для фотографии и информации-->
+    <div class="container-portrait">
+      <img src="../../assets/images/unknown.jpg" height="450px" width="400px" alt="">
+
+      <div class="portrait-info">
+        <span>{{ miner?.minerName }}</span><br>
+        <span [style.visibility]="part == 'БРИГАДИР' ? 'hidden' : 'visible'" >Уровень воздуха: {{ miner?.airCylinder }}</span>
+      </div>
+    </div>
+
+
+<!--    Контейнер для сообщений, доп. информации-->
+    <div class="container-info">
+      <div *ngIf="activeItem.label == 'О себе'" class="personal-info" [@infoAnim]>
+        <span>{{ part.charAt(0).toUpperCase() + part.substr(1).toLowerCase() }},
+          {{ brigadeId }} бригада</span>
+      </div>
+
+      <div *ngIf="activeItem.label == 'Дополнительная информация'" class="extra-information" [@infoAnim]>
+        <span>Возраст: {{ miner?.age }}</span><br>
+        <span>Рост: {{ miner?.height }}</span><br>
+        <span>Вес: {{ miner?.weight }}</span><br>
+        <span>Группа здоровья: {{ miner?.healthGroup }}</span>
+      </div>
+
+      <div *ngIf="activeItem.label == 'Сообщения'" class="messages">
+        <p-messages [(value)]="profileMessages" [enableService]="false"></p-messages>
+      </div>
+
+    </div>
+  </div>
+</div>
+

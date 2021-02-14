@@ -1,0 +1,117 @@
+#content {
+  background: white;
+  background-size: 100%;
+  height: 93%;
+  width: 100vw;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  grid-template-rows: 16% 84%;
+
+  padding: 0;
+  height: 100%;
+  max-width: 100vw !important;
+
+}
+
+.container-portrait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  * {
+    position: relative;
+    top: -70px;
+  }
+
+  img {
+    width: 70%;
+    height: 480px;
+    box-shadow: 4px 3px 15px;
+  }
+
+  .portrait-info {
+    width: 70%;
+    height: auto;
+    color: black;
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 5px;
+
+    > span {
+      position: relative;
+      top: 0;
+      font-family: 'Comfortaa', sans-serif !important;
+      font-weight: 700;
+      font-size: 32px;
+    }
+  }
+}
+.container-tab-menu {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  ::ng-deep p-tabMenu {
+    width: 100% !important;
+  }
+
+  ::ng-deep .p-tabmenu-nav {
+    padding-left: 35%;
+    border-bottom: 2px solid darkgrey !important;
+  }
+
+  ::ng-deep .p-menuitem-link {
+    border-bottom: 2px solid darkgrey !important;
+  }
+
+  ::ng-deep .p-menuitem-link:hover {
+    border-bottom: 2px solid #D4A439 !important;
+  }
+
+  ::ng-deep .p-menuitem-text {
+    color: black !important;
+    font-size: 24px;
+    font-family: 'Comfortaa', sans-serif !important;
+    margin-left: 3px;
+  }
+
+  ::ng-deep {
+    .p-badge-danger {
+      position: relative;
+      top: -10px;
+      left: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      font-family: 'Comfortaa', sans-serif !important;
+    }
+  }
+
+}
+
+.container-info {
+
+  div {
+    width: 100%;
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 30px;
+  }
+
+  span {
+    text-align: left;
+    color: black !important;
+    font-size: 28px;
+    font-family: 'Comfortaa', sans-serif !important;
+  }
+}
+
+.messages {
+  ::ng-deep .p-messages {
+    width: 80% !important;
+  }
+}

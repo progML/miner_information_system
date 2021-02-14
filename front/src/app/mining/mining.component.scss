@@ -1,0 +1,61 @@
+#content {
+  background: white;
+  background-size: 100%;
+  height: 93%;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  padding: 0;
+  height: 100%;
+  max-width: 100vw !important;
+  flex-direction: column;
+}
+
+.container-title {
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 32px;
+  padding-left: 25px;
+}
+
+.container-table {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+::ng-deep {
+  p-table {
+    width: 60% !important;
+  }
+
+  .p-datatable {
+    width: 100% !important;
+
+  }
+}
+
+::ng-deep {
+  .p-datatable-thead {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #333333 74%);
+
+    th {
+      color: black !important;
+      font-size: 20px !important;
+    }
+  }
+
+  .p-datatable-tbody {
+    td {
+      font-size: 20px !important;
+    }
+  }
+}

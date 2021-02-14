@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div class="container-form container-sign-in" id="container-sign-in">
+
+  <div class="container-form-tittle">
+    <span>Вход</span>
+  </div>
+
+  <form class="form-auth" [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+    <span class="p-input-icon-left">
+          <i class="pi pi-user"></i>
+          <input (ngModelChange)="setValid()" maxlength="16" formControlName="username"  type="text" pInputText placeholder="Имя пользователя">
+    </span>
+
+    <span *ngIf="loginForm.controls['username'].invalid && loginForm.controls['username'].touched ? setValid() : false" class="error-msg">
+      Введите имя пользователя <br> (3-16 знаков, только лат. символы)
+    </span>
+    <span *ngIf="!isUserExist && loginForm.controls['username'].untouched" class="error-msg">
+      Неправильные данные
+    </span>
+
+    <span style="margin-top: 8px;" class="p-input-icon-left">
+      <i class="pi pi-lock"></i>
+      <input (ngModelChange)="setValid()" maxlength="20" formControlName ="password" type="password" pPassword placeholder="Пароль">
+    </span>
+    <span *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched ? setValid() : false" class="error-msg">
+      Введите пароль (8-20 знаков)
+    </span>
+
+    <button style="width: 70%;" type="submit" [disabled]="isInvalid"
+            [style.background]="isInvalid ? 'lightgray' : 'white'" [class]="isInvalid ? 'disabled-button' : 'button-auth'">Войти</button>
+
+  </form>
+</div>
+
+</body>
+</html>

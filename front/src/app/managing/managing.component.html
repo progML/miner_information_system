@@ -1,0 +1,58 @@
+<app-header></app-header>
+<div id="content">
+  <div class = "container-txt">
+    <span text>Состав {{ brigadeId }} бригады:</span>
+  </div>
+  <div class="container-tab-mark">
+    <!--     <form (ngSubmit)="DeleteSubmit()">-->
+    <table>
+      <tr>
+        <th>Номер нахтера</th>
+        <th>Имя</th>
+        <th>Роль</th>
+      </tr>
+      <tr *ngFor="let mg of managing">
+        <td>{{mg.minerId}}</td>
+        <td>{{mg.name}}</td>
+        <td>{{mg.part}}</td>
+        <td><button (click)="deleteSubmit(mg.minerId)" type ="reset" onclick="window.location.reload();">&times;</button></td>
+      </tr>
+    </table>
+    <!--     </form>-->
+  </div>
+  <div class="container-txt">
+    <span>Свободные шахтеры:</span>
+  </div>
+  <div class="container-tab-mark">
+    <table>
+      <tr>
+        <th>Номер шахтера</th>
+        <th>Имя</th>
+        <th>Возраст</th>
+        <th>Рост</th>
+        <th>Вес</th>
+        <th>Группа здоровья</th>
+        <th>Выбор роли</th>
+      </tr>
+      <tr *ngFor="let mi of miners">
+        <td>{{mi.minerId}}</td>
+        <td>{{mi.minerName}}</td>
+        <td>{{mi.age}}</td>
+        <td>{{mi.height}}</td>
+        <td>{{mi.weight}}</td>
+        <td>{{mi.healthGroup}}</td>
+        <td>
+          <select [formControl]="partValues" >
+            <option *ngFor="let r of parts" [value]="r.id">
+              {{r.part}}
+            </option>
+          </select>
+        </td>
+        <td><button (click)="addSubmit(mi.minerId)" type ="reset" onclick="window.location.reload();" >&#43;</button></td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+

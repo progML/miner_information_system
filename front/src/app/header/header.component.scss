@@ -1,0 +1,46 @@
+#header {
+
+  height: 7%;
+
+  ::ng-deep .p-menubar {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #333333 74%);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    height: 100% !important;
+  }
+
+  ::ng-deep .p-menuitem-link:hover {
+    background: none !important;
+    outline: none !important;
+    border: none !important;
+  }
+
+  ::ng-deep .p-menuitem-text, .mat-button {
+    color: white !important;
+    font-family: 'Comfortaa', sans-serif !important;
+    font-size: 24px !important;
+    transition: 0.2s ease-in-out;
+  }
+
+  ::ng-deep .p-menuitem:hover {
+    ::ng-deep .p-menuitem-text {
+      color: #D4A439 !important;
+    }
+  }
+
+}
+
+::ng-deep .mat-menu-item {
+  font-family: 'Comfortaa', sans-serif !important;
+  font-size: 18px !important;
+}
+
+::ng-deep .mat-button:hover {
+  color: #D4A439 !important;
+}
+
+::ng-deep .mat-menu-content, .mat-button {
+  width: 280px !important;
+}
