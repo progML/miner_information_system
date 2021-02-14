@@ -13,4 +13,4 @@
 
 
 ## Структура данных(DDL)
-![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/DDL.xml)
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/DDL.png)
