@@ -38,6 +38,6 @@
 ## Просмотор добычи
 ![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/oFvxSL8TUEo.jpg)
 
-## Меню удалени я добавления свободных шахтеров(управление бригадой)
+## Меню удаления и добавления свободных шахтеров(управление бригадой)
 ![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/RWzJVhHBIGA.jpg)
 
