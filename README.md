@@ -12,3 +12,5 @@
 2) Просмотор своих оценок.
 
 
+## Структура данных(DDL)
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/DDL.xml)
