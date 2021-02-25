@@ -34,17 +34,18 @@
 ![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/auth.jpg)
 
 ## Интерфейс бригадира
-![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/sYJN10cr8Co.jpg)
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/auth.jpg)
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/foreman_1.jpg)
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/foreman_2.jpg)
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/foreman_3.jpg)
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/foreman_4.jpg)
+
+## Интерфейс шахтера
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/main_miner.jpg)
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/miner_1.jpg)
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/miner_2.jpg)
+![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/miner_3.jpg)
 
 
-![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/eanWdVIWzV8.jpg)
 
-
-![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/JdU4aA9r1eY.jpg)
-
-
-![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/oFvxSL8TUEo.jpg)
-
-
-![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/result/RWzJVhHBIGA.jpg)
 
