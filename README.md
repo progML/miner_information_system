@@ -11,6 +11,13 @@
 1) Проверить наличие сообщений от бригадира.
 2) Просмотор своих оценок.
 
+## Реализация
+#Бригадир
+![alt text](https://github.com/progML/Miner_Information_system/blob/main/back/result/result_foreman.gif)
+
+#Шахтер
+![alt text](https://github.com/progML/Miner_Information_system/blob/main/back/result/result_miner.gif)
+
 
 ## Структура данных(DDL)
 ![alt-текст](https://github.com/progML/Miner_Information_system/blob/main/back/DDL.png)
