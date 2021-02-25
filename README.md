@@ -11,6 +11,9 @@
 1) Проверить наличие сообщений от бригадира.
 2) Просмотор своих оценок.
 
+Frontend: Angular
+Backend: Spring
+
 ## Реализация
 #Бригадир
 ![alt text](https://github.com/progML/Miner_Information_system/blob/main/back/result/result_foreman.gif)
