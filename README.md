@@ -11,8 +11,10 @@
 1) Проверить наличие сообщений от бригадира.
 2) Просмотор своих оценок.
 
-Frontend: Angular
-Backend: Spring
+
+Стек технологий:
+1) Frontend: Angular
+2) Backend: Spring
 
 ## Реализация
 #Бригадир
